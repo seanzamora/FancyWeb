@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FancyWeb Passwords</title>
+</head>
+<body>
+    
+<fancyweb-password></fancyweb-password>
+<!-- Load polyfills; note that "loader" will load these async -->
+<script src="node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js" defer></script>
+<script src="fancyweb-passwords.js"></script>
+
+<!-- Load a custom element definitions in `waitFor` and return a promise -->
+<!-- <script type="module"> 
+  function loadScript(src) {
+    return new Promise(function(resolve, reject) {
+      const script = document.createElement('script');
+      script.src = src;
+      script.onload = resolve;
+      script.onerror = reject;
+      document.head.appendChild(script);
+    });
+  }
+
+  WebComponents.waitFor(() => {
+    // At this point we are guaranteed that all required polyfills have
+    // loaded, and can use web components APIs.
+    // Next, load element definitions that call `customElements.define`.
+    // Note: returning a promise causes the custom elements
+    // polyfill to wait until all definitions are loaded and then upgrade
+    // the document in one batch, for better performance.
+    return loadScript('fancyweb-passwords.js');
+  });
+</script> -->
+</body>
+</html>
